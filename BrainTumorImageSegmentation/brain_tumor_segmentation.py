@@ -33,3 +33,9 @@ crop_dim = 128
 batch_size = 12
 seed=16
 train_test_split = 0.85
+
+# Create output directory for images
+output_directory = Path("inference_examples")
+output_directory.mkdir(exist_ok=True)
+
+### Convert the TensorFlow saved model to (IR) with Intel OpenVINO
